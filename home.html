@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Ruhuna Racing
+
+        </title>
+        <link rel="stylesheet" type="text/css" href="home.css">
+        <link rel="script" href="script.js">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="icon" href="RRlogo.ico" type="image/x-icon"/>
+    </head>
+    <body>
+        <header>
+            <h2 class="logo">RUHUNA RACING</h2>
+            <nav class="navigation">
+                <a href="#" class="active">Home</a>
+                <a href="#">Events</a>
+                <a href="#">Cars</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="#" id="nightmode"><i class="material-icons">light_mode</i></a>
+            </nav>
+        </header>
+
+        <section class="parallax">
+            <h2 id="tagline">Design to Race</h2>
+            <img src="F1car.png" id="f1car">
+        </section>
+        
+
+        <section class="introduction">
+            <h2>Who are we?</h2>
+            <p>We are Ruhuna Racing, a team of young and innovative undergraduates representing the Faculty of Engineering, University of Ruhuna, Sri Lanka. We design and fabricate an open-wheeled Formula Student electric racing car afresh with the aim of competing in the Formula Student competitions. <br><br>
+
+                Formula Student is an educational student engineering competition, run by the Institution of Mechanical Engineers, in which student teams from across the globe build a single seated formula style car and compete with each other.
+                
+            </p>
+        </section>
+
+        <section id="news">
+            <h2>News</h2>
+            <p>We are Ruhuna Racing, a team of young and innovative undergraduates representing the Faculty of Engineering, University of Ruhuna, Sri Lanka. We design and fabricate an open-wheeled Formula Student electric racing car afresh with the aim of competing in the Formula Student competitions. <br><br>
+
+                Formula Student is an educational student engineering competition, run by the Institution of Mechanical Engineers, in which student teams from across the globe build a single seated formula style car and compete with each other.
+                
+            </p>
+        </section>
+
+        <footer>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>We are Ruhuna Racing, a team of young and innovative undergraduates representing the Faculty of Engineering, University of Ruhuna, Sri Lanka. We design and fabricate an open-wheeled Formula Student electric racing car afresh with the aim of competing in the Formula Student competitions. <br><br>
+    
+                    Formula Student is an educational student engineering competition, run by the Institution of Mechanical Engineers, in which student teams from across the globe build a single seated formula style car and compete with each other.
+                    
+                </p>
+            </section>
+        </footer>
+
+
+
+
+
+
+
+    <script >
+        let tagline = document.getElementById('tagline');
+        let f1car = document.getElementById('f1car');
+
+        window.addEventListener('scroll',() =>{
+            let value = window.scrollY;
+    
+            tagline.style.marginTop = value * 2.5 + 'px';
+            f1car.style.left = value * -4.5 + 'px';
+    
+        });
+
+        var icon = document.getElementById('nightmode');
+
+        icon.onclick = function(){
+            document.body.classList.toggle('darktheme');
+        }
+
+
+    </script>    
+    </body>
+</html>
